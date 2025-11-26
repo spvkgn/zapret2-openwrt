@@ -1,0 +1,42 @@
+Package: ip2net
+Version: 0.1.4
+Depends: libc
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/ip2net
+SourceName: ip2net
+Section: net
+SourceDateEpoch: 1763894507
+Architecture: mips_mips32
+Installed-Size: 20480
+Filename: ip2net_0.1.4_mips_mips32.ipk
+Size: 5428
+SHA256sum: bc95503597eaf31a4933fa4718b8c366f4a287403c4ec15b96babc4e37e29ac2
+Description:  ip2net
+
+Package: mdig
+Version: 0.1.4
+Depends: libc
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/mdig
+SourceName: mdig
+Section: net
+SourceDateEpoch: 1763894507
+Architecture: mips_mips32
+Installed-Size: 20480
+Filename: mdig_0.1.4_mips_mips32.ipk
+Size: 6020
+SHA256sum: 39af72d627daa2ccc0fb1e10e7356f34a4a162db41c02adf9ce6505425c4540a
+Description:  mdig
+
+Package: nfqws2
+Version: 0.1.4
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit2
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/nfqws2
+SourceName: nfqws2
+Section: net
+SourceDateEpoch: 1763894507
+Architecture: mips_mips32
+Installed-Size: 174080
+Filename: nfqws2_0.1.4_mips_mips32.ipk
+Size: 75623
+SHA256sum: 981956e5e683b10fefc2e263357f9fb258a0ecc76f0f415735f0b87563f06ad7
+Description:  nfqws2
+

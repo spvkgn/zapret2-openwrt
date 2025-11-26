@@ -1,0 +1,39 @@
+Package: ip2net
+Version: 0.1.4
+Depends: libc
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/ip2net
+SourceName: ip2net
+Section: net
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 4249
+Filename: ip2net_0.1.4_arm_cortex-a7_neon-vfpv4.ipk
+Size: 4895
+SHA256sum: 63580638bfce89c8f6c58e10417e41c70702485355106c4dee3a2d25aecf15d4
+Description:  ip2net
+
+Package: mdig
+Version: 0.1.4
+Depends: libc
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/mdig
+SourceName: mdig
+Section: net
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 5026
+Filename: mdig_0.1.4_arm_cortex-a7_neon-vfpv4.ipk
+Size: 5658
+SHA256sum: 37e9240727a1cf8b71f708b8130b4395c7537721d770b92342e6886609714d7c
+Description:  mdig
+
+Package: nfqws2
+Version: 0.1.4
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/nfqws2
+SourceName: nfqws2
+Section: net
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 73523
+Filename: nfqws2_0.1.4_arm_cortex-a7_neon-vfpv4.ipk
+Size: 74092
+SHA256sum: 974734fcbd6f6b52473c620ae46a4327d7eb179b217c9691daae58758b43ba96
+Description:  nfqws2
+

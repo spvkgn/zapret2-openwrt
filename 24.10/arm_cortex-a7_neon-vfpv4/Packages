@@ -1,0 +1,33 @@
+Package: ip2net
+Version: 0.1.4
+Depends: libc
+Section: net
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 20480
+Filename: ip2net_0.1.4_arm_cortex-a7_neon-vfpv4.ipk
+Size: 4975
+SHA256sum: 92598c6db75585481c89b401fc534b37dd26ffe3e477d141b504154167002217
+Description:  ip2net
+
+Package: mdig
+Version: 0.1.4
+Depends: libc
+Section: net
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 20480
+Filename: mdig_0.1.4_arm_cortex-a7_neon-vfpv4.ipk
+Size: 5838
+SHA256sum: dfd3b8b046d2ccc378687e7aa1ea45f9b43ea1de47712ff99442aacbc013d3f6
+Description:  mdig
+
+Package: nfqws2
+Version: 0.1.4
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit2
+Section: net
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 153600
+Filename: nfqws2_0.1.4_arm_cortex-a7_neon-vfpv4.ipk
+Size: 73492
+SHA256sum: 2f19b9e94eaea6496739b893201a466550939ee9ea3208a8ef72dcd944b71d7c
+Description:  nfqws2
+

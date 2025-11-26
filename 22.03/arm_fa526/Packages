@@ -1,0 +1,33 @@
+Package: ip2net
+Version: 0.1.4
+Depends: libc
+Section: net
+Architecture: arm_fa526
+Installed-Size: 4439
+Filename: ip2net_0.1.4_arm_fa526.ipk
+Size: 5089
+SHA256sum: ce4fea5b1c9f363092784bd16e0075df331248ba5a06cc15f0c5f6c5ad7ac327
+Description:  ip2net
+
+Package: mdig
+Version: 0.1.4
+Depends: libc
+Section: net
+Architecture: arm_fa526
+Installed-Size: 5217
+Filename: mdig_0.1.4_arm_fa526.ipk
+Size: 5872
+SHA256sum: d2c4162fee7a6f27c02b956dc8d2eeb4d1152ba4ff8d13a035b56b464d067817
+Description:  mdig
+
+Package: nfqws2
+Version: 0.1.4
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Section: net
+Architecture: arm_fa526
+Installed-Size: 74118
+Filename: nfqws2_0.1.4_arm_fa526.ipk
+Size: 74814
+SHA256sum: 086374b584a50f8d39b7d5cd81218861f33bd6c0304a34c694db8dd22ae4d3e0
+Description:  nfqws2
+

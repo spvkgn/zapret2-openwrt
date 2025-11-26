@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "architecture": "mipsel_mips32",
+  "packages": {
+    "ip2net": "0.1.4",
+    "mdig": "0.1.4",
+    "nfqws2": "0.1.4"
+  }
+}
