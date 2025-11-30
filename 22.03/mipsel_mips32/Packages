@@ -1,0 +1,33 @@
+Package: ip2net
+Version: 0.2
+Depends: libc
+Section: net
+Architecture: mipsel_mips32
+Installed-Size: 4994
+Filename: ip2net_0.2_mipsel_mips32.ipk
+Size: 5643
+SHA256sum: b66fb5d6674dfe1f998ff54f99ccbd9cc70413701aa877ae61527c579560b83d
+Description:  ip2net
+
+Package: mdig
+Version: 0.2
+Depends: libc
+Section: net
+Architecture: mipsel_mips32
+Installed-Size: 5545
+Filename: mdig_0.2_mipsel_mips32.ipk
+Size: 6194
+SHA256sum: 1971e00d65a671acd424e567c961b66fa2d4afb3f760fa54e6a8503c1333ca06
+Description:  mdig
+
+Package: nfqws2
+Version: 0.2
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Section: net
+Architecture: mipsel_mips32
+Installed-Size: 78006
+Filename: nfqws2_0.2_mipsel_mips32.ipk
+Size: 78399
+SHA256sum: 2239817e7e4f2481cc48366f83ac10e814efc447c125fbb7574f31bf0f74ef9c
+Description:  nfqws2
+

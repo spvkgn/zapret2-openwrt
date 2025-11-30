@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "architecture": "mips64_octeonplus",
+  "packages": {
+    "ip2net": "0.2",
+    "mdig": "0.2",
+    "nfqws2": "0.2"
+  }
+}

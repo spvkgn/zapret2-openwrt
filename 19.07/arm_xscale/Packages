@@ -1,0 +1,33 @@
+Package: ip2net
+Version: 0.2
+Depends: libc
+Section: net
+Architecture: arm_xscale
+Installed-Size: 4397
+Filename: ip2net_0.2_arm_xscale.ipk
+Size: 5027
+SHA256sum: f0cb2dd4659fc47f34d9af1c397d540fefdc4035d5d645f6e360bc5490833802
+Description:  ip2net
+
+Package: mdig
+Version: 0.2
+Depends: libc
+Section: net
+Architecture: arm_xscale
+Installed-Size: 5142
+Filename: mdig_0.2_arm_xscale.ipk
+Size: 5771
+SHA256sum: dae9c105e9b21ac545fab68cffe3c17b8a4c7f4f0e97370ce982da83f90f3b64
+Description:  mdig
+
+Package: nfqws2
+Version: 0.2
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Section: net
+Architecture: arm_xscale
+Installed-Size: 75800
+Filename: nfqws2_0.2_arm_xscale.ipk
+Size: 76469
+SHA256sum: e61c747fb045512ddbc7ccee0b7c76dae6a8610544f7f8d7683e08d18e3eea67
+Description:  nfqws2
+
