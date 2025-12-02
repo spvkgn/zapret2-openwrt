@@ -1,0 +1,33 @@
+Package: ip2net
+Version: 0.3
+Depends: libc
+Section: net
+Architecture: aarch64_generic
+Installed-Size: 4712
+Filename: ip2net_0.3_aarch64_generic.ipk
+Size: 5375
+SHA256sum: 0a7764b9193092ce2d4cf687bdf076dcf5f0298734020003b119515ba11f25a9
+Description:  ip2net
+
+Package: mdig
+Version: 0.3
+Depends: libc
+Section: net
+Architecture: aarch64_generic
+Installed-Size: 5598
+Filename: mdig_0.3_aarch64_generic.ipk
+Size: 6254
+SHA256sum: 79a2f82fc3fcc728e4448359c0aee9e3dc62f49960ca900e204c6d2c89eaa483
+Description:  mdig
+
+Package: nfqws2
+Version: 0.3
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Section: net
+Architecture: aarch64_generic
+Installed-Size: 82069
+Filename: nfqws2_0.3_aarch64_generic.ipk
+Size: 82734
+SHA256sum: b2154f787b34edc27b4e3d6ce8afef0c19dd5cf9b193f12f5500740f93c8779b
+Description:  nfqws2
+

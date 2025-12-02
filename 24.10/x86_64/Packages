@@ -1,0 +1,33 @@
+Package: ip2net
+Version: 0.3
+Depends: libc
+Section: net
+Architecture: x86_64
+Installed-Size: 20480
+Filename: ip2net_0.3_x86_64.ipk
+Size: 5376
+SHA256sum: 31d82e797365fd97689bde865e6aa38ad6e656c1de7d0994b424ada8eadd5908
+Description:  ip2net
+
+Package: mdig
+Version: 0.3
+Depends: libc
+Section: net
+Architecture: x86_64
+Installed-Size: 30720
+Filename: mdig_0.3_x86_64.ipk
+Size: 6248
+SHA256sum: ef45eb6262278a843030425f6d7038ab3f8151f12e90ef04c456292d304af168
+Description:  mdig
+
+Package: nfqws2
+Version: 0.3
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit2
+Section: net
+Architecture: x86_64
+Installed-Size: 174080
+Filename: nfqws2_0.3_x86_64.ipk
+Size: 82845
+SHA256sum: e985e15ec4d573589db7c8e9a65eb66700fa400112150882c884c4b7e750562f
+Description:  nfqws2
+

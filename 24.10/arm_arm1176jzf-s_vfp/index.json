@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "architecture": "arm_arm1176jzf-s_vfp",
+  "packages": {
+    "ip2net": "0.3",
+    "mdig": "0.3",
+    "nfqws2": "0.3"
+  }
+}
