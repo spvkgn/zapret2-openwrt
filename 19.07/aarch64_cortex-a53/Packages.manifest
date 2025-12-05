@@ -1,0 +1,39 @@
+Package: ip2net
+Version: 0.4
+Depends: libc
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/ip2net
+SourceName: ip2net
+Section: net
+Architecture: aarch64_cortex-a53
+Installed-Size: 4393
+Filename: ip2net_0.4_aarch64_cortex-a53.ipk
+Size: 5023
+SHA256sum: 5ef8212db77aa1ac60a28ad5b839726d7f0d81fa843b8f3e8964e4e44cbd0580
+Description:  ip2net
+
+Package: mdig
+Version: 0.4
+Depends: libc
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/mdig
+SourceName: mdig
+Section: net
+Architecture: aarch64_cortex-a53
+Installed-Size: 5284
+Filename: mdig_0.4_aarch64_cortex-a53.ipk
+Size: 5944
+SHA256sum: ed9bad79fe9ba5c8cff56eabab89b2ea98e78a4169a0daba994ddf8a334e9d3c
+Description:  mdig
+
+Package: nfqws2
+Version: 0.4
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/nfqws2
+SourceName: nfqws2
+Section: net
+Architecture: aarch64_cortex-a53
+Installed-Size: 77845
+Filename: nfqws2_0.4_aarch64_cortex-a53.ipk
+Size: 78478
+SHA256sum: b077b3e65200770f215c44c0a2ec468de6b90a1d16dfd244c7e645b2b20ca21d
+Description:  nfqws2
+
