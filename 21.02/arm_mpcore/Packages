@@ -1,0 +1,33 @@
+Package: ip2net
+Version: 0.5
+Depends: libc
+Section: net
+Architecture: arm_mpcore
+Installed-Size: 4350
+Filename: ip2net_0.5_arm_mpcore.ipk
+Size: 5007
+SHA256sum: e77f51ede0ea600984fa591ce56fbd5f1d58d707cfa9eb4f958b936d898ef94a
+Description:  ip2net
+
+Package: mdig
+Version: 0.5
+Depends: libc
+Section: net
+Architecture: arm_mpcore
+Installed-Size: 5136
+Filename: mdig_0.5_arm_mpcore.ipk
+Size: 5786
+SHA256sum: 984bdc41555e2b40f1bfb3659be78e5a3d1820f722b4dee072b79108a54844c5
+Description:  mdig
+
+Package: nfqws2
+Version: 0.5
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Section: net
+Architecture: arm_mpcore
+Installed-Size: 78921
+Filename: nfqws2_0.5_arm_mpcore.ipk
+Size: 79456
+SHA256sum: 3d0d1bf264d653aa2ad58012b387b6afde46648f07053c12d7d8199ffbc91d6e
+Description:  nfqws2
+
