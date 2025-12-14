@@ -1,0 +1,33 @@
+Package: ip2net
+Version: 0.7.1
+Depends: libc
+Section: net
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 4353
+Filename: ip2net_0.7.1_arm_arm1176jzf-s_vfp.ipk
+Size: 5017
+SHA256sum: a3716be8645040405416dd54adac1a499e16210e957c3921aa2ff72bcf5e8861
+Description:  ip2net
+
+Package: mdig
+Version: 0.7.1
+Depends: libc
+Section: net
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 5141
+Filename: mdig_0.7.1_arm_arm1176jzf-s_vfp.ipk
+Size: 5805
+SHA256sum: 62f0d76e0fe2f680abeecc37ab25bd4a33cfd772d19a9315007d2b1abd62cf41
+Description:  mdig
+
+Package: nfqws2
+Version: 0.7.1
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Section: net
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 80349
+Filename: nfqws2_0.7.1_arm_arm1176jzf-s_vfp.ipk
+Size: 80940
+SHA256sum: 66d6044cfe3f042eca416279413e1eb69cf11badd79d7417ef19c08fdcf5ddec
+Description:  nfqws2
+

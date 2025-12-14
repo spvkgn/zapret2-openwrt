@@ -1,0 +1,39 @@
+Package: ip2net
+Version: 0.7.1
+Depends: libc
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/ip2net
+SourceName: ip2net
+Section: net
+Architecture: arm_fa526
+Installed-Size: 4391
+Filename: ip2net_0.7.1_arm_fa526.ipk
+Size: 5021
+SHA256sum: 04a510c65ac558a58d810f12ed3fe8a02293f4ef3891c8a731272ab2594c45ff
+Description:  ip2net
+
+Package: mdig
+Version: 0.7.1
+Depends: libc
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/mdig
+SourceName: mdig
+Section: net
+Architecture: arm_fa526
+Installed-Size: 5133
+Filename: mdig_0.7.1_arm_fa526.ipk
+Size: 5765
+SHA256sum: 81c43850557b3cc80fd14be2bccfe119412def92d81aa39b89e873f665c466cc
+Description:  mdig
+
+Package: nfqws2
+Version: 0.7.1
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/nfqws2
+SourceName: nfqws2
+Section: net
+Architecture: arm_fa526
+Installed-Size: 81410
+Filename: nfqws2_0.7.1_arm_fa526.ipk
+Size: 82014
+SHA256sum: ff9f8eb7efc6bd60de1960aa043cfe18bd66769d3ab4fcb585084b69b2c01eed
+Description:  nfqws2
+
