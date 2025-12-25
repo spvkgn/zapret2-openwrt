@@ -1,0 +1,42 @@
+Package: ip2net
+Version: 0.7.6
+Depends: libc
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/ip2net
+SourceName: ip2net
+Section: net
+SourceDateEpoch: 1764857594
+Architecture: mipsel_24kc_24kf
+Installed-Size: 4884
+Filename: ip2net_0.7.6_mipsel_24kc_24kf.ipk
+Size: 5516
+SHA256sum: 44f62e0693fb77dd2b1a6a1d78b3274e4dcf3ca540499725466a75cbc3a0ab6b
+Description:  ip2net
+
+Package: mdig
+Version: 0.7.6
+Depends: libc
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/mdig
+SourceName: mdig
+Section: net
+SourceDateEpoch: 1764857594
+Architecture: mipsel_24kc_24kf
+Installed-Size: 5394
+Filename: mdig_0.7.6_mipsel_24kc_24kf.ipk
+Size: 6060
+SHA256sum: 18f208ded48af04f6d0124727720621f957d7a15e637d8c8d5e80a14b5f6ae1a
+Description:  mdig
+
+Package: nfqws2
+Version: 0.7.6
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/nfqws2
+SourceName: nfqws2
+Section: net
+SourceDateEpoch: 1764857594
+Architecture: mipsel_24kc_24kf
+Installed-Size: 84031
+Filename: nfqws2_0.7.6_mipsel_24kc_24kf.ipk
+Size: 84470
+SHA256sum: 0eaa4d51df90ce34f1cb1a26b6455d2301eded0f2464944246b1bf0c1f15f444
+Description:  nfqws2
+

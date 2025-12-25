@@ -1,0 +1,33 @@
+Package: ip2net
+Version: 0.7.6
+Depends: libc
+Section: net
+Architecture: mips_4kec
+Installed-Size: 20480
+Filename: ip2net_0.7.6_mips_4kec.ipk
+Size: 5427
+SHA256sum: 4fe83608c310867d867c4d380c8eaeb45b669b9e481eda3a17b0e1897e84ba14
+Description:  ip2net
+
+Package: mdig
+Version: 0.7.6
+Depends: libc
+Section: net
+Architecture: mips_4kec
+Installed-Size: 20480
+Filename: mdig_0.7.6_mips_4kec.ipk
+Size: 6012
+SHA256sum: 7a5b52eab383529f7663a397c362a3b89b5637833125ad397112d4a1cd37b6e7
+Description:  mdig
+
+Package: nfqws2
+Version: 0.7.6
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit2
+Section: net
+Architecture: mips_4kec
+Installed-Size: 194560
+Filename: nfqws2_0.7.6_mips_4kec.ipk
+Size: 83228
+SHA256sum: 57b4b4459baf1ebb2780178fb5d315ba7958c5711671ec75a771f0ca45fff92f
+Description:  nfqws2
+
