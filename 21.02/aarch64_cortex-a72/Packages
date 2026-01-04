@@ -1,0 +1,33 @@
+Package: ip2net
+Version: 0.8.1
+Depends: libc
+Section: net
+Architecture: aarch64_cortex-a72
+Installed-Size: 4713
+Filename: ip2net_0.8.1_aarch64_cortex-a72.ipk
+Size: 5378
+SHA256sum: b53fabfd9d6a153857177607dfb8fd9bc95af0b3148a495158ad29003b9d31e8
+Description:  ip2net
+
+Package: mdig
+Version: 0.8.1
+Depends: libc
+Section: net
+Architecture: aarch64_cortex-a72
+Installed-Size: 5597
+Filename: mdig_0.8.1_aarch64_cortex-a72.ipk
+Size: 6266
+SHA256sum: b45f677ec6b46827479ecdd67c5a18af1301625054c163c9eb7d94d2957f75e8
+Description:  mdig
+
+Package: nfqws2
+Version: 0.8.1
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Section: net
+Architecture: aarch64_cortex-a72
+Installed-Size: 89164
+Filename: nfqws2_0.8.1_aarch64_cortex-a72.ipk
+Size: 89746
+SHA256sum: 1ee394bf9560df549cc6c3d5652ffda7ee5169bceb5c4f30d79ea84de42e99c1
+Description:  nfqws2
+
