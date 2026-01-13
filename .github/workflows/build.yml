@@ -79,7 +79,6 @@ jobs:
         arch:
           - aarch64_cortex-a53
           - aarch64_cortex-a72
-          - aarch64_cortex-a76
           - aarch64_generic
           - arm_arm1176jzf-s_vfp
           - arm_arm926ej-s
@@ -92,9 +91,7 @@ jobs:
           - arm_cortex-a9
           - arm_cortex-a9_neon
           - arm_cortex-a9_vfpv3-d16
-          - arm_fa526
-          - arm_mpcore
-          - arm_xscale
+          - i386_pentium4
           - mips64_octeonplus
           - mips_24kc
           - mips_4kec
@@ -112,21 +109,15 @@ jobs:
             arch: arm_cortex-a7_vfpv4
           - branch: openwrt-19.07
             arch: mips_4kec
-          - branch: openwrt-19.07
-            arch: aarch64_cortex-a76
           - branch: openwrt-21.02
             arch: arm_cortex-a7_vfpv4
-          - branch: openwrt-21.02
-            arch: aarch64_cortex-a76
-          - branch: openwrt-22.03
-            arch: aarch64_cortex-a76
-          - branch: openwrt-23.05
+        include:
+          - branch: openwrt-24.10
             arch: aarch64_cortex-a76
           - branch: openwrt-24.10
-            arch: arm_mpcore
-        include:
-          - branch: openwrt-21.02
-            arch: mipsel_24kc
+            arch: mips64_mips64r2
+          - branch: openwrt-24.10
+            arch: mips64el_mips64r2
           # - branch: SNAPSHOT
           #   arch: x86_64
       # fail-fast: false
@@ -151,7 +142,7 @@ jobs:
         if: matrix.branch == 'openwrt-23.05' || matrix.branch == 'openwrt-24.10' || matrix.branch == 'SNAPSHOT'
         working-directory: /builder
         run: |
-          HOME=/builder ./setup.sh
+          ./setup.sh || UPSTREAM_URL=https://mirror-03.infra.openwrt.org ./setup.sh
           apt update -qq ; apt install -y python3-cryptography
 
       - name: Setup ccache
