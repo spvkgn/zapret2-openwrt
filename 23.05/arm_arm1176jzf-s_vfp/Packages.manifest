@@ -1,0 +1,42 @@
+Package: ip2net
+Version: 0.8.4
+Depends: libc
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/ip2net
+SourceName: ip2net
+Section: net
+SourceDateEpoch: 1764857594
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 4401
+Filename: ip2net_0.8.4_arm_arm1176jzf-s_vfp.ipk
+Size: 5060
+SHA256sum: db703e65e38666e6d1909a9657befd22386df38d18b16ccba258e6ddd3c95841
+Description:  ip2net
+
+Package: mdig
+Version: 0.8.4
+Depends: libc
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/mdig
+SourceName: mdig
+Section: net
+SourceDateEpoch: 1764857594
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 5526
+Filename: mdig_0.8.4_arm_arm1176jzf-s_vfp.ipk
+Size: 6210
+SHA256sum: cb129aada0f7026d1cc2fe81c9ea49dcc2fdc0c22d9c6c3cbbe191a2e444b81b
+Description:  mdig
+
+Package: nfqws2
+Version: 0.8.4
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/nfqws2
+SourceName: nfqws2
+Section: net
+SourceDateEpoch: 1764857594
+Architecture: arm_arm1176jzf-s_vfp
+Installed-Size: 83460
+Filename: nfqws2_0.8.4_arm_arm1176jzf-s_vfp.ipk
+Size: 84096
+SHA256sum: 972453ba8efe2d5b0bfad0661cce945f1cdfc7ba677ddddf67073a30932c4ed7
+Description:  nfqws2
+

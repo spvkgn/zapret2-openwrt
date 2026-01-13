@@ -1,0 +1,22 @@
+Package: ip2net
+Version: 0.8.4
+Depends: libc
+Section: net
+Architecture: mips64el_mips64r2
+Installed-Size: 20480
+Filename: ip2net_0.8.4_mips64el_mips64r2.ipk
+Size: 5649
+SHA256sum: 15683be2ee9d82480c2b2271e0d8d2ee931f340caa61c4eaa2176f05768b091a
+Description:  ip2net
+
+Package: mdig
+Version: 0.8.4
+Depends: libc
+Section: net
+Architecture: mips64el_mips64r2
+Installed-Size: 20480
+Filename: mdig_0.8.4_mips64el_mips64r2.ipk
+Size: 6686
+SHA256sum: fe3014af56be0cba759aa74d15852f45b184e988b07fa1b5de71bef679bd2f6b
+Description:  mdig
+
