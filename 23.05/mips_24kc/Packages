@@ -1,0 +1,33 @@
+Package: ip2net
+Version: 0.8.5
+Depends: libc
+Section: net
+Architecture: mips_24kc
+Installed-Size: 4751
+Filename: ip2net_0.8.5_mips_24kc.ipk
+Size: 5404
+SHA256sum: 64d1783e938501b3df635e2860aaa903eb26b4377c55af3419eb59dc07468ee2
+Description:  ip2net
+
+Package: mdig
+Version: 0.8.5
+Depends: libc
+Section: net
+Architecture: mips_24kc
+Installed-Size: 5666
+Filename: mdig_0.8.5_mips_24kc.ipk
+Size: 6331
+SHA256sum: 4707929c1b0509fce11b3ee96b599498c4c2516b0855bd2ee637917633b4fc3f
+Description:  mdig
+
+Package: nfqws2
+Version: 0.8.5
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Section: net
+Architecture: mips_24kc
+Installed-Size: 87508
+Filename: nfqws2_0.8.5_mips_24kc.ipk
+Size: 87408
+SHA256sum: d189afb0b62da37bf5379e4edcf05ddf53ba9c446a188546fcab348728df4149
+Description:  nfqws2
+

@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "architecture": "mips64el_mips64r2",
+  "packages": {
+    "ip2net": "0.8.5",
+    "mdig": "0.8.5"
+  }
+}

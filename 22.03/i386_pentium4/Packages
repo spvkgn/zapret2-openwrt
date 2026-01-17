@@ -1,0 +1,33 @@
+Package: ip2net
+Version: 0.8.5
+Depends: libc
+Section: net
+Architecture: i386_pentium4
+Installed-Size: 4806
+Filename: ip2net_0.8.5_i386_pentium4.ipk
+Size: 5428
+SHA256sum: 839c6344961cfce3111531a700b4456c26dc6429438bcba2980ae904425decf7
+Description:  ip2net
+
+Package: mdig
+Version: 0.8.5
+Depends: libc
+Section: net
+Architecture: i386_pentium4
+Installed-Size: 5846
+Filename: mdig_0.8.5_i386_pentium4.ipk
+Size: 6497
+SHA256sum: a786611f37cbaf3cfb5e4fa252585979763ff93df01b92edd2848da8e249a662
+Description:  mdig
+
+Package: nfqws2
+Version: 0.8.5
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Section: net
+Architecture: i386_pentium4
+Installed-Size: 87872
+Filename: nfqws2_0.8.5_i386_pentium4.ipk
+Size: 88288
+SHA256sum: 64a1b5a137d7b0a7cb687ef1c0f6f5af3afca9d0f78456a4484318f2b00c3c6f
+Description:  nfqws2
+

@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "architecture": "aarch64_generic",
+  "packages": {
+    "ip2net": "0.8.5",
+    "mdig": "0.8.5",
+    "nfqws2": "0.8.5"
+  }
+}
