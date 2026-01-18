@@ -1,0 +1,33 @@
+Package: ip2net
+Version: 0.8.6
+Depends: libc
+Section: net
+Architecture: mips64_octeonplus
+Installed-Size: 5027
+Filename: ip2net_0.8.6_mips64_octeonplus.ipk
+Size: 5683
+SHA256sum: 15008d18c1ec1cf6c24ea9d80cb8dd9b2cbec76b1b1471c28c0977c0b842b6fb
+Description:  ip2net
+
+Package: mdig
+Version: 0.8.6
+Depends: libc
+Section: net
+Architecture: mips64_octeonplus
+Installed-Size: 6177
+Filename: mdig_0.8.6_mips64_octeonplus.ipk
+Size: 6847
+SHA256sum: 3a84f2422c50b20283b14efcc06bb059ff6eee91a0e9ac6bfaa625f5417a69ae
+Description:  mdig
+
+Package: nfqws2
+Version: 0.8.6
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Section: net
+Architecture: mips64_octeonplus
+Installed-Size: 90531
+Filename: nfqws2_0.8.6_mips64_octeonplus.ipk
+Size: 91094
+SHA256sum: 16a4d820f512211e9c3849222f38e787287afb8c92e10733cba664187d3c216e
+Description:  nfqws2
+

@@ -1,0 +1,33 @@
+Package: ip2net
+Version: 0.8.6
+Depends: libc
+Section: net
+Architecture: arm_cortex-a5_vfpv4
+Installed-Size: 4353
+Filename: ip2net_0.8.6_arm_cortex-a5_vfpv4.ipk
+Size: 5011
+SHA256sum: a854361392b3fc3e290216d857410a1fe26015b4c6328ca753f2d874df2be788
+Description:  ip2net
+
+Package: mdig
+Version: 0.8.6
+Depends: libc
+Section: net
+Architecture: arm_cortex-a5_vfpv4
+Installed-Size: 5397
+Filename: mdig_0.8.6_arm_cortex-a5_vfpv4.ipk
+Size: 6090
+SHA256sum: 520438c9688ff81678a2548c1546a1126491db6366e8af52752acdc6b3ee2a69
+Description:  mdig
+
+Package: nfqws2
+Version: 0.8.6
+Depends: libc, libnetfilter-queue1, libcap, zlib, luajit
+Section: net
+Architecture: arm_cortex-a5_vfpv4
+Installed-Size: 84249
+Filename: nfqws2_0.8.6_arm_cortex-a5_vfpv4.ipk
+Size: 84836
+SHA256sum: 5497ce6fc531393a8732561fe5c6545e094e29fc1ed7683a5776dc3887a5d3e7
+Description:  nfqws2
+

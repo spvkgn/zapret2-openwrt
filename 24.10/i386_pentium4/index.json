@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "architecture": "i386_pentium4",
+  "packages": {
+    "ip2net": "0.8.6",
+    "mdig": "0.8.6",
+    "nfqws2": "0.8.6"
+  }
+}

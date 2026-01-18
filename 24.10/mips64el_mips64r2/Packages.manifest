@@ -1,0 +1,28 @@
+Package: ip2net
+Version: 0.8.6
+Depends: libc
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/ip2net
+SourceName: ip2net
+Section: net
+SourceDateEpoch: 1767132319
+Architecture: mips64el_mips64r2
+Installed-Size: 20480
+Filename: ip2net_0.8.6_mips64el_mips64r2.ipk
+Size: 5646
+SHA256sum: 05fa5a9bf6595ac6c3fc8b908ed01e6b7b72bcc7a4901c3915c04ed50ed8a5d6
+Description:  ip2net
+
+Package: mdig
+Version: 0.8.6
+Depends: libc
+Source: /__w/zapret2-openwrt/zapret2-openwrt/package/mdig
+SourceName: mdig
+Section: net
+SourceDateEpoch: 1767132319
+Architecture: mips64el_mips64r2
+Installed-Size: 20480
+Filename: mdig_0.8.6_mips64el_mips64r2.ipk
+Size: 6686
+SHA256sum: b7d5044e9cd03cc4c64e3984cd97c01fe834de18855e76deaf3eafcf746d1e44
+Description:  mdig
+
