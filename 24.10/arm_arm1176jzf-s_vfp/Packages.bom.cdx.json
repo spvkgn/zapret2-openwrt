@@ -1,0 +1,1 @@
+{"metadata":{"timestamp":"2026-02-20T10:34:43Z"},"version":1,"bomFormat":"CycloneDX","components":[{"name":"ip2net","type":"application","version":"0.9.4.2"},{"version":"0.9.4.2","name":"mdig","type":"application"},{"type":"application","name":"nfqws2","version":"0.9.4.2"}],"serialNumber":"urn:uuid:92b66153-5f8c-411e-81d5-d17de670c6dd","specVersion":"1.4"}
