@@ -143,7 +143,8 @@ jobs:
         working-directory: /builder
         run: |
           ./setup.sh || UPSTREAM_URL=https://mirror-03.infra.openwrt.org ./setup.sh
-          apt update -qq ; apt install -y python3-cryptography
+          apt update -qq ; apt install -y python3-pip libffi-dev libssl-dev
+          pip3 install --upgrade pip ; pip3 install cryptography
 
       - name: Build packages
         id: build
