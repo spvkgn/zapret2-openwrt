@@ -143,7 +143,13 @@ jobs:
         working-directory: /builder
         run: |
           ./setup.sh || UPSTREAM_URL=https://mirror-03.infra.openwrt.org ./setup.sh
-          apt update -qq ; apt install -y python3-cryptography
+          #
+          tee -a /etc/apt/sources.list >> /dev/null <<'EOF'
+          deb [check-valid-until=no] http://archive.debian.org/debian bullseye main contrib non-free
+          deb [check-valid-until=no] http://archive.debian.org/debian bullseye-updates main contrib non-free
+          deb [check-valid-until=no] http://snapshot.debian.org/archive/debian-security/20260901T022952Z/ bullseye-security main contrib non-free
+          EOF
+          apt update ; apt install -y python3-cryptography
 
       - name: Build packages
         id: build

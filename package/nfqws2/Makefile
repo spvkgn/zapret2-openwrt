@@ -77,6 +77,12 @@ ifeq ($(HOST_ARCH),$(filter $(HOST_ARCH), x86_64 mips64))
   endif
 endif
 
+MAKE_FLAGS += \
+	$(TARGET_CONFIGURE_OPTS) \
+	SOURCE_DATE_EPOCH=$(shell date +%s) \
+	CFLAGS="$(TARGET_CFLAGS) -DZAPRET_GH_VER=$(PKG_VERSION) -DZAPRET_GH_HASH=$(PKG_SOURCE_VERSION)" \
+	LDFLAGS="$(TARGET_LDFLAGS) $(EXTRA_LDFLAGS)"
+
 define Build/Compile
 	if [ "$(LUA_JIT)" = 1 ]; then \
 		$(MAKE) $(PKG_JOBS) -C $(LUASRC_DIR) \
