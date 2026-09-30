@@ -143,7 +143,11 @@ jobs:
         working-directory: /builder
         run: |
           ./setup.sh || UPSTREAM_URL=https://mirror-03.infra.openwrt.org ./setup.sh
-          #
+
+      - name: Install build deps
+        if: matrix.branch == 'openwrt-23.05' || matrix.branch == 'openwrt-24.10' || matrix.branch == 'SNAPSHOT'
+        run: |
+          # https://gist.github.com/ishad0w/7665cde882aa7dc3eec99613802e61e4
           tee -a /etc/apt/sources.list >> /dev/null <<'EOF'
           deb [check-valid-until=no] http://archive.debian.org/debian bullseye main contrib non-free
           deb [check-valid-until=no] http://archive.debian.org/debian bullseye-updates main contrib non-free
@@ -167,12 +171,14 @@ jobs:
           else
             VERSION=${TAG#v}.$(date --utc -d $DATE +%Y%m%d)
           fi
+          SHA=${{ needs.check.outputs.sha }}
           (
             cd $GITHUB_WORKSPACE
             cp -r zapret2/ip2net package/ip2net/
             cp -r zapret2/mdig package/mdig/
             cp -r zapret2/nfq2 package/nfqws2/
-            find package/{ip2net,mdig,nfqws2} -type f -name Makefile -exec sed "s/PKG_RELEASE.*/PKG_VERSION:=$VERSION/" -i {} \;
+            find package/{ip2net,mdig,nfqws2} -type f -name Makefile -exec \
+              sed -i {} -e "s/^PKG_VERSION.*/PKG_VERSION:=$VERSION/" -e "s/^PKG_SOURCE_VERSION.*/PKG_SOURCE_VERSION:=$SHA/" \;
             rm -rf zapret2
           )
 

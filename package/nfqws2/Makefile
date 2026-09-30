@@ -1,7 +1,9 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=nfqws2
+PKG_VERSION:=1
 PKG_RELEASE:=1
+PKG_SOURCE_VERSION:=
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/host-build.mk
