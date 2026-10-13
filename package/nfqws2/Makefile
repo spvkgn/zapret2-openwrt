@@ -15,15 +15,15 @@ ifeq ($(LUA_JIT),1)
 	LUA_DEPEND:=
 	LUAJIT_VER?=2.1
 	ifeq ($(ARCH),riscv64)
-		LUAJIT_URL:=https://github.com/infiWang/luajit2/archive
-		LAUJIT_BRANCH:=v2.1-20260114-riscv64
+		LUAJIT_URL:=https://codeload.github.com/infiWang/luajit2/tar.gz
+		LUAJIT_BRANCH:=v2.1-20260114-riscv64
 		LUAJIT_COMMIT=4d8cf882a3a4ed3259407ad78614a60b02dd553f
 		LUAJIT_RELEASE:=2.1-20260114-$(LUAJIT_COMMIT)
-		LUAJIT_URL_FILE:=$(LUAJIT_COMMIT).tar.gz
+		LUAJIT_URL_FILE:=$(LUAJIT_COMMIT)
 	else
-		LUAJIT_URL:=https://github.com/openresty/luajit2/archive/refs/tags
+		LUAJIT_URL:=https://codeload.github.com/openresty/luajit2/tar.gz/refs/tags
 		LUAJIT_RELEASE:=2.1-20250826
-		LUAJIT_URL_FILE:=v$(LUAJIT_RELEASE).tar.gz
+		LUAJIT_URL_FILE:=v$(LUAJIT_RELEASE)
 	endif
 	LUAJIT_TGZ:=$(PKG_NAME)-luajit-$(LUAJIT_RELEASE).tar.gz
 	LUASRC_DIR:=$(PKG_BUILD_DIR)/luajit-$(LUAJIT_RELEASE)
@@ -50,7 +50,7 @@ define Download/$(PKG_NAME)-luajit
 	FILE:=$(LUAJIT_TGZ)
 	URL:=$(LUAJIT_URL)
 	URL_FILE:=$(LUAJIT_URL_FILE)
-	HASH:=skip
+	HASH:=5a49743ad6ce4b7f19aac71b55a08052c1feb62750f051982082c12bf62f39c0
 endef
 $(eval $(call Download,$(PKG_NAME)-luajit))
 endif

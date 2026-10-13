@@ -138,6 +138,36 @@ jobs:
           ref: ${{ inputs.build_mode == 'release' && needs.check.outputs.tag || null }}
           path: zapret2
 
+      - name: Prepare cache paths
+        id: cache_paths
+        run: |
+          ls -l1 /builder
+          {
+            echo "paths<<EOF"
+            echo /builder/{staging_dir,build_dir,toolchain,feeds,feeds.conf} | tr ' ' '\n'
+            echo "EOF"
+          } >> $GITHUB_OUTPUT
+
+      - name: Compute cache key suffix
+        id: cache-key
+        run: |
+          if [ -f /builder/feeds.conf.default ]; then
+            echo "suffix=$(sha256sum /builder/feeds.conf.default | cut -c1-16)" >> $GITHUB_OUTPUT
+          else
+            echo "suffix=nofeeds" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Restore SDK cache
+        if: matrix.branch == 'openwrt-23.05' || matrix.branch == 'openwrt-24.10' || matrix.branch == 'SNAPSHOT'
+        id: sdk-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ steps.cache_paths.outputs.paths }}
+          key: openwrt-sdk-${{ matrix.branch }}-${{ matrix.arch }}-${{ steps.cache-key.outputs.suffix }}
+          restore-keys: |
+            openwrt-sdk-${{ matrix.branch }}-${{ matrix.arch }}-
+            openwrt-sdk-${{ matrix.branch }}-
+
       - name: Setup SDK
         if: matrix.branch == 'openwrt-23.05' || matrix.branch == 'openwrt-24.10' || matrix.branch == 'SNAPSHOT'
         working-directory: /builder
@@ -226,6 +256,13 @@ jobs:
         with:
           name: logs-${{ matrix.branch }}-${{ matrix.arch }}
           path: logs-*.tar.xz
+
+      - name: Save OpenWrt SDK cache
+        if: always() && (matrix.branch == 'openwrt-24.10' || matrix.branch == 'openwrt-23.05' || matrix.branch == 'SNAPSHOT')
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ steps.cache_paths.outputs.paths }}
+          key: ${{ steps.sdk-cache.outputs.cache-primary-key }}
 
   gh-pages:
     if: false
