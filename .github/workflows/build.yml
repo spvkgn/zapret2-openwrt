@@ -139,6 +139,7 @@ jobs:
           path: zapret2
 
       - name: Prepare cache paths
+        if: false
         id: cache_paths
         run: |
           ls -l1 /builder
@@ -149,6 +150,7 @@ jobs:
           } >> $GITHUB_OUTPUT
 
       - name: Compute cache key suffix
+        if: false
         id: cache-key
         run: |
           if [ -f /builder/feeds.conf.default ]; then
@@ -158,7 +160,8 @@ jobs:
           fi
 
       - name: Restore SDK cache
-        if: matrix.branch == 'openwrt-23.05' || matrix.branch == 'openwrt-24.10' || matrix.branch == 'SNAPSHOT'
+        if: false
+        # if: matrix.branch == 'openwrt-23.05' || matrix.branch == 'openwrt-24.10' || matrix.branch == 'SNAPSHOT'
         id: sdk-cache
         uses: actions/cache/restore@v4
         with:
@@ -258,7 +261,8 @@ jobs:
           path: logs-*.tar.xz
 
       - name: Save OpenWrt SDK cache
-        if: always() && (matrix.branch == 'openwrt-24.10' || matrix.branch == 'openwrt-23.05' || matrix.branch == 'SNAPSHOT')
+        if: false
+        # if: always() && (matrix.branch == 'openwrt-24.10' || matrix.branch == 'openwrt-23.05' || matrix.branch == 'SNAPSHOT')
         uses: actions/cache/save@v4
         with:
           path: ${{ steps.cache_paths.outputs.paths }}
