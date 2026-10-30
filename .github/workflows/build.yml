@@ -71,53 +71,53 @@ jobs:
         isRelease:
           - ${{ inputs.build_mode == 'release' }}
         branch:
-          - openwrt-19.07
-          - openwrt-21.02
-          - openwrt-22.03
-          - openwrt-23.05
+          # - openwrt-19.07
+          # - openwrt-21.02
+          # - openwrt-22.03
+          # - openwrt-23.05
           - openwrt-24.10
         arch:
           - aarch64_cortex-a53
-          - aarch64_cortex-a72
-          - aarch64_generic
-          - arm_arm1176jzf-s_vfp
-          - arm_arm926ej-s
-          - arm_cortex-a15_neon-vfpv4
-          - arm_cortex-a5_vfpv4
-          - arm_cortex-a7
-          - arm_cortex-a7_neon-vfpv4
-          - arm_cortex-a7_vfpv4
-          - arm_cortex-a8_vfpv3
-          - arm_cortex-a9
-          - arm_cortex-a9_neon
-          - arm_cortex-a9_vfpv3-d16
-          - i386_pentium4
-          - mips64_octeonplus
-          - mips_24kc
-          - mips_4kec
-          - mips_mips32
+          # - aarch64_cortex-a72
+          # - aarch64_generic
+          # - arm_arm1176jzf-s_vfp
+          # - arm_arm926ej-s
+          # - arm_cortex-a15_neon-vfpv4
+          # - arm_cortex-a5_vfpv4
+          # - arm_cortex-a7
+          # - arm_cortex-a7_neon-vfpv4
+          # - arm_cortex-a7_vfpv4
+          # - arm_cortex-a8_vfpv3
+          # - arm_cortex-a9
+          # - arm_cortex-a9_neon
+          # - arm_cortex-a9_vfpv3-d16
+          # - i386_pentium4
+          # - mips64_octeonplus
+          # - mips_24kc
+          # - mips_4kec
+          # - mips_mips32
           - mipsel_24kc
-          - mipsel_24kc_24kf
-          - mipsel_74kc
-          - mipsel_mips32
-          - x86_64
-        exclude:
-          - isRelease: false
-          - branch: openwrt-19.07
-            arch: arm_cortex-a7
-          - branch: openwrt-19.07
-            arch: arm_cortex-a7_vfpv4
-          - branch: openwrt-19.07
-            arch: mips_4kec
-          - branch: openwrt-21.02
-            arch: arm_cortex-a7_vfpv4
-        include:
-          - branch: openwrt-24.10
-            arch: aarch64_cortex-a76
-          - branch: openwrt-24.10
-            arch: mips64_mips64r2
-          - branch: openwrt-24.10
-            arch: mips64el_mips64r2
+          # - mipsel_24kc_24kf
+          # - mipsel_74kc
+          # - mipsel_mips32
+          # - x86_64
+        # exclude:
+        #   - isRelease: false
+        #   - branch: openwrt-19.07
+        #     arch: arm_cortex-a7
+        #   - branch: openwrt-19.07
+        #     arch: arm_cortex-a7_vfpv4
+        #   - branch: openwrt-19.07
+        #     arch: mips_4kec
+        #   - branch: openwrt-21.02
+        #     arch: arm_cortex-a7_vfpv4
+        # include:
+        #   - branch: openwrt-24.10
+        #     arch: aarch64_cortex-a76
+        #   - branch: openwrt-24.10
+        #     arch: mips64_mips64r2
+        #   - branch: openwrt-24.10
+        #     arch: mips64el_mips64r2
           # - branch: SNAPSHOT
           #   arch: x86_64
       # fail-fast: false
@@ -142,11 +142,18 @@ jobs:
         if: matrix.branch == 'openwrt-23.05' || matrix.branch == 'openwrt-24.10' || matrix.branch == 'SNAPSHOT'
         working-directory: /builder
         run: |
-          if [[ ${{ matrix.branch }} == 'openwrt-23.05' ]]; then
-            export VERSION_PATH="releases/23.05.6"
-          fi
           ./setup.sh || UPSTREAM_URL=https://mirror-03.infra.openwrt.org ./setup.sh
-          apt update -qq ; apt install -y python3-cryptography
+
+      - name: Install build deps
+        if: matrix.branch == 'openwrt-23.05' || matrix.branch == 'openwrt-24.10' || matrix.branch == 'SNAPSHOT'
+        run: |
+          # https://gist.github.com/ishad0w/7665cde882aa7dc3eec99613802e61e4
+          tee -a /etc/apt/sources.list >> /dev/null <<'EOF'
+          deb [check-valid-until=no] http://archive.debian.org/debian bullseye main contrib non-free
+          deb [check-valid-until=no] http://archive.debian.org/debian bullseye-updates main contrib non-free
+          deb [check-valid-until=no] http://snapshot.debian.org/archive/debian-security/20260901T022952Z/ bullseye-security main contrib non-free
+          EOF
+          apt update ; apt install -y python3-cryptography
 
       - name: Setup ccache
         uses: actions/cache@v4
@@ -231,7 +238,8 @@ jobs:
           path: logs-*.tar.xz
 
   gh-pages:
-    if: inputs.build_mode == 'release'
+    # if: inputs.build_mode == 'release'
+    if: false
     needs: [ check, build ]
     permissions:
       contents: write
